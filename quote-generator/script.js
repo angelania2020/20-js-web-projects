@@ -21,7 +21,7 @@ function showLoadingSpinner() {
 function newQuote() {
     showLoadingSpinner();
     // Pick a random quote from apiQuotes array
-    const quote = apiQuotes[Math.floor(Math.random() * apiQuotes.length)]
+    const quote = apiQuotes[Math.floor(Math.random() * apiQuotes.length)];
     // Check if author field is blank and replace it with 'Unknown'
     if (!quote.author) {
         authorText.textContent = 'Unknown';
@@ -60,7 +60,7 @@ function tweetQuote() {
 
 // Event listeners
 newQuoteBtn.addEventListener('click', newQuote);
-twitterBtn.addEventListener('click', tweetQuote)
+twitterBtn.addEventListener('click', tweetQuote);
 
 // On Load
 // newQuote();
